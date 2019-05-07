@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Илья Ерофеев](https://up.htmlacademy.ru/htmlcss/25/user/5046).
-* Наставник: [Мурат Баркинхоев] (https://htmlacademy.ru/profile/id186857).
+* Наставник: [Мурат Баркинхоев](https://htmlacademy.ru/profile/id186857).
 
 
 ---
