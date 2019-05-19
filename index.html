@@ -82,6 +82,28 @@
           </a>
         </div>
       </section>
+      <section class="modal-contact">
+        <h2 class="visually-hidden">Написать сообщение в магазин</h2>
+        <form name="modal-contact-form" class="modal-contact-form">
+          <label for="modal-contact-form-user">Ваше имя:</label>
+          <input type="text" id="modal-contact-form-user" placeholder="Имя Фамилия" name="modal-contact-form-user">
+          <label for="modal-contact-form-email">Ваш e-mail:</label>
+          <input type="email" id="modal-contact-form-email" placeholder="email@example.com" name="modal-contact-form-email">
+          <label for="modal-contact-form-message">Текст письма:</label>
+          <textarea id="modal-contact-form-message" rows="3" cols="10" placeholder="В свободной форме" name="modal-contact-form-message"></textarea>
+          <button type="submit" name="modal-contact-form-submit">Отправить</button>
+        </form>
+        <button type="button" class="modal-contact-close modal-close">
+        	<span class="visually-hidden">Закрыть окно</span>
+        </button>
+      </section>
+      <section class="modal-map">
+        <h2 class="visually-hidden">Подробная схема проезда</h2>
+        <img src="img/map-big.jpg" alt="г.Санкт-Петербург, ул. Б. Конюшенная д.19/8" width="940" height="446">
+        <button type="button" class="modal-map-close modal-close">
+          <span class="visually-hidden">Закрыть карту</span>
+        </button>
+      </section>
     </main>
     <footer class="main-footer">
       <div class="main-footer-top">
@@ -135,7 +157,7 @@
             <a href="mailto:mail@htmlacademy.ru" class="main-footer-bottom-contacts-mail">mail@htmlacademy.ru</a>
           </p>
           <p>Разработано —
-            <a href="https://htmlacademy.ru" class="main-footer-bottom-contacts-link">htmlacademy.ru</a>
+            <a href="https://htmlacademy.ru/intensive/htmlcss" class="main-footer-bottom-contacts-link">htmlacademy.ru</a>
           </p>
         </div>
       </div>
