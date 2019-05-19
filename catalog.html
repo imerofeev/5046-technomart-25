@@ -69,6 +69,60 @@
         <li><a>Перфораторы</a></li>
       </ul>
       <h1>Перфораторы</h1>
+      <section class="main-content-filter">
+        <h2>Фильтр товаров</h2>
+        <form class="main-content-filter-form">
+          <fieldset name="main-content-filter-form-manufacturers">
+            <legend class="main-content-filter-form-manufacturers-description">Производители:</legend>
+            <p class="main-content-filter-form-manufacturers-item">
+              <input type="checkbox" id="manufacturer-bosch" name="bosch" class="main-content-filter-form-checkbox" checked>
+              <label for="manufacturer-bosch" class="main-content-filter-form-manufacturer">
+                Bosch
+              </label>
+            </p>
+            <p class="main-content-filter-form-manufacturers-item">
+              <input type="checkbox" id="manufacturer-interskol" name="interskol" class="main-content-filter-form-checkbox">
+              <label for="manufacturer-interskol" class="main-content-filter-form-manufacturer">
+                Интерскол
+              </label>
+            </p>
+            <p class="main-content-filter-form-manufacturers-item">
+              <input type="checkbox" id="manufacturer-makita" name="makita" class="main-content-filter-form-checkbox" checked>
+              <label for="manufacturer-makita" class="main-content-filter-form-manufacturer">
+                Makita
+              </label>
+            </p>
+            <p class="main-content-filter-form-manufacturers-item">
+              <input type="checkbox" id="manufacturer-dewalt" name="dewalt" class="main-content-filter-form-checkbox">
+              <label for="manufacturer-dewalt" class="main-content-filter-form-manufacturer">
+                DeWalt
+              </label>
+            </p>
+            <p class="main-content-filter-form-manufacturers-item">
+              <input type="checkbox" id="manufacturer-hitachi" name="hitachi" class="main-content-filter-form-checkbox">
+              <label for="manufacturer-hitachi" class="main-content-filter-form-manufacturer">
+                Hitachi
+              </label>
+            </p>
+          </fieldset>
+          <fieldset name="main-content-filter-form-chargers">
+            <legend class="main-content-filter-form-chargers-description">Питание:</legend>
+            <p class="main-content-filter-form-chargers-item">
+              <input type="radio" id="main-content-filter-form-chargers-battery" name="charge-type" class="main-content-filter-form-radio" checked>
+              <label for="main-content-filter-form-chargers-battery" class="main-content-filter-form-charger">
+                Аккумуляторные
+              </label>
+            </p>
+            <p class="main-content-filter-form-chargers-item">
+              <input type="radio" id="main-content-filter-form-chargers-powersupply" name="charge-type" class="main-content-filter-form-radio">
+              <label for="main-content-filter-form-chargers-powersupply" class="main-content-filter-form-charger">
+                Сетевые
+              </label>
+            </p>
+          </fieldset>
+          <input type="submit" value="Показать">
+        </form>
+      </section>
       <div>
         <div class="main-content-items">
           <article class="main-content-item">
@@ -178,6 +232,17 @@
           </article>
         </div>
       </div>
+      <section class="modal-basket-adding">
+        <h2 class="visually-hidden">Сообщение о добавлении в корзину</h2>
+        <div class="modal-basket-adding-content">
+          <span class="modal-basket-adding-content-message">Товар добавлен в корзину!</span>
+          <a class="modal-basket-adding-gotobasket-button" href="#">Оформить заказ</a>
+          <button class="modal-basket-adding-continue-shopping" type="button" name="continue-shopping">Продолжить покупки</button>
+        </div>
+        <button type="button" class="modal-basket-adding-close modal-close">
+          <span class="visually-hidden">Закрыть окно</span>
+        </button>
+      </section>
     </main>
     <footer class="main-footer">
       <div class="main-footer-top">
@@ -231,7 +296,7 @@
             <a href="mailto:mail@htmlacademy.ru" class="main-footer-bottom-contacts-mail">mail@htmlacademy.ru</a>
           </p>
           <p>Разработано —
-            <a href="https://htmlacademy.ru" class="main-footer-bottom-contacts-link">htmlacademy.ru</a>
+            <a href="https://htmlacademy.ru/intensive/htmlcss" class="main-footer-bottom-contacts-link">htmlacademy.ru</a>
           </p>
         </div>
       </div>
