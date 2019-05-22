@@ -11,7 +11,10 @@
           <span class="visually-hidden">ТЕХНОМАРТ</span>
           <img src="img/logo-technomart.svg" alt="Техномарт" width="110" height="18">
         </a>
-        <span class="main-header-top-search">Поиск:</span>
+        <form class="main-header-top-searchform" name="searchform" action="http://echo.htmlacademy.ru">
+          <label for="main-header-top-search"><span class="visually-hidden">Поиск</span></label>
+          <input type="text" id="search" class="search-input" placeholder="Поиск:">
+        </form>
         <div class="main-header-top-links">
           <a href="#" class="main-header-top-links-bookmarks">Закладки: 0</a>
           <a href="#" class="main-header-top-links-basket">Корзина: 0</a>
@@ -82,9 +85,9 @@
           </a>
         </div>
       </section>
-      <section class="modal-contact">
+      <section class="modal-contact modal">
         <h2 class="visually-hidden">Написать сообщение в магазин</h2>
-        <form name="modal-contact-form" class="modal-contact-form">
+        <form name="modal-contact-form" class="modal-contact-form" action="http://echo.htmlacademy.ru">
           <label for="modal-contact-form-user">Ваше имя:</label>
           <input type="text" id="modal-contact-form-user" placeholder="Имя Фамилия" name="modal-contact-form-user">
           <label for="modal-contact-form-email">Ваш e-mail:</label>
@@ -97,7 +100,7 @@
         	<span class="visually-hidden">Закрыть окно</span>
         </button>
       </section>
-      <section class="modal-map">
+      <section class="modal-map modal">
         <h2 class="visually-hidden">Подробная схема проезда</h2>
         <img src="img/map-big.jpg" alt="г.Санкт-Петербург, ул. Б. Конюшенная д.19/8" width="940" height="446">
         <button type="button" class="modal-map-close modal-close">
