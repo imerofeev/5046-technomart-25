@@ -85,6 +85,25 @@
       <section class="main-content-filter">
         <h2>Фильтр товаров</h2>
         <form class="main-content-filter-form" action="http://echo.htmlacademy.ru">
+          <fieldset name="filter-price">
+            <legend class="filter-price-header">Цена:</legend>
+            <div class="filter-price-range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <button type="button" class="toggle toggle-min">
+                <span class="visually-hidden">Минимальная цена</span>
+              </button>
+              <button type="button" class="toggle toggle-max">
+                <span class="visually-hidden">Максимальная цена</span>
+              </button>
+            </div>
+            <div class="filter-price-controls">
+              <label class="min-price"><input name="min-price" type="text" value="0"></label>
+              <span>—</span>
+              <label class="max-price"><input name="max-price" type="text" value="30000"></label>
+            </div>       
+          </fieldset>
           <fieldset name="main-content-filter-form-manufacturers">
             <legend class="main-content-filter-form-manufacturers-description">Производители:</legend>
             <p class="main-content-filter-form-manufacturers-item">
