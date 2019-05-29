@@ -182,23 +182,23 @@ img {
   text-transform: uppercase;
 }
 
-.main-content-item {
+.item {
   border: 1px solid #e5e5e5;
 }
 
-.main-content-item h3 {
+.item h3 {
   line-height: 19px;
   text-align: center;
 }
 
-.main-content-item-name {
+.item-name {
   color: #000000;
   font-size: 18px;
   line-height: 20px;
   font-weight: bold;
 }
 
-.main-content-item-links a {
+.item-links a {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -206,19 +206,19 @@ img {
   border-radius: 3px;
 }
 
-.main-content-item-buy {
+.item-buy {
   background-color: #63a63e;
   color: #ffffff;
   border-bottom: 3px solid #367315;
 }
 
-.main-content-item-bookmarks {
+.item-bookmarks {
   background-color: #ffffff;
   color: #32425c;
   border: 3px solid #63a63e;
 }
 
-.main-content-item-price-old {
+.item-price-old {
   font-size: 17px;
   line-height: 18px;
   color: #999999;
@@ -227,7 +227,7 @@ img {
   text-align: center;
 }
 
-.main-content-item-price-new {
+.item-price-new {
   font-size: 17px;
   line-height: 18px;
   background-color: #ee3643;
