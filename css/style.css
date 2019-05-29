@@ -118,6 +118,110 @@ img {
   background-color: #ffffff;
 }
 
+.promoblock-items {
+  font-family: "Cuprum", Arial, sans-serif;
+  color: #ffffff;  
+}
+
+.promoblock-item h3 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.promoblock-item a {
+  background-color: rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.promoblock-item-materials {
+  background-color: #ffbf47;
+}
+
+.promoblock-item-tools {
+  background-color: #3bbce3;
+}
+
+.promoblock-item-technics {
+  background-color: #dc91d8;
+}
+
+.promoblock-item-sale {
+  background-color: #8ed78f;
+}
+
+.promoblock-item-delivery {
+  background-color: #ffc047;
+}
+
+.promoblock-items-slide {
+  font-family: "Cuprum", Arial, sans-serif;
+  color: #ffffff;
+}
+
+.promoblock-items-slide p {
+  font-size: 18px;
+  line-height: 24px; 
+}
+
+.promoblock-items-slide a {
+  text-align: center;
+  border-radius: 3px;
+  background-color: #ee3643;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.popularitems-header {
+  font-family: "Cuprum", Arial, sans-serif;
+  background-color: #f9f5f0;
+  color: #32425c;
+}
+
+.popularmanufacturer-items {
+  list-style: none;
+}
+
+.popularmanufacturer-item {
+  border: 1px solid #e7e7e7;
+}
+
+.services {
+  background-color: #f4f8fa;
+}
+
+.services h2{
+  font-size: 30px;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.services-slider-slides h3 {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 21px;
+  line-height: 30px;
+  color: #32425c;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.services-slider-slide-delivery {
+  background: url(../img/services-delivery.png) no-repeat 170px 20px;
+}
+
+.services-slider-slide-guarantee {
+  background: url(../img/services-guarantee.png) no-repeat  245px 20px;
+}
+
+.sservices-slider-slide-credit {
+  background: url(../img/services-credit.png) no-repeat 173px 20px;
+}
+
 .about-company {
   background-color: #ffffff;
   color: #000000;
@@ -151,7 +255,7 @@ img {
 
 /* MAIN CONTENT ON CATALOG */
 
-.catalog-main h2 {
+.item-category {
   background-color: #f1f5f7;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
@@ -179,6 +283,30 @@ img {
   font-size: 13px;
   line-height: 18px;
   font-weight: normal;
+  text-transform: uppercase;
+}
+
+.main-content-filter h2,
+.items-sort {
+  background-color: #f7f3ec;
+}
+
+.items-sort-links a {
+  color: #c5c5c5;
+  text-decoration: underline;
+}
+
+a.items-sort-link-active {
+  color: #ee3643;
+  text-decoration: none;
+}
+
+.filter-price-header,
+.main-content-filter-form-manufacturers-description,
+.main-content-filter-form-chargers-description {
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: bold;
   text-transform: uppercase;
 }
 
@@ -236,6 +364,21 @@ img {
   text-align: center;
 }
 
+.pagination a {
+  color: #000000;
+  border: 1px solid #e5e5e5;
+  border-radius: 2px;
+}
+
+.pagination a.current-page {
+  background-color: #ee3643;
+  color: #ffffff;
+  border: 1px solid #ee3643;
+}
+
+.item-category-about {
+  background-color: #f2f6f8;
+}
 
 /* FOOTER */
 
