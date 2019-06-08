@@ -457,56 +457,154 @@ img {
 
 .popularmanufacturer-item a {
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .services {
+  width: 100%;
+  padding-top: 62px;
+  padding-bottom: 100px;
   background-color: #f4f8fa;
 }
 
-.services h2{
-  font-size: 30px;
-  line-height: 30px;
-  color: #000000;
-  text-transform: uppercase;
-}
-
-.services-slider {
-  position: relative;
-  width: 940px;
-  overflow: hidden;
-  padding-top: 10px;
+.services-header {
+  flex-wrap: wrap;
   display: flex;
 }
 
-.services-slider-slides h3 {
+.services-header h2 {
   font-family: "Cuprum", Arial, sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: normal;
+  color: #000000;
+  text-transform: uppercase;
+  margin: 0 0 27px 0;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  width: 940px;
+}
+
+.services-header p {
+  width: 400px;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  margin: 0;
+  padding-bottom: 70px;
+}
+
+.services-slider {
+  display: flex;
+  align-items: flex-start;
+}
+
+.services-slider-switching-list {
+  list-style: none;
+  position: relative;
+  width: 240px;
+  padding: 0;
+  margin: 0 80px 0 0;
+}
+
+.services-slider-switching-list:after {
+  content: "";
+  position: absolute;
+  top: -45px;
+  right: 0;
+  width: 10px;
+  height: 279px;
+  background: url("../img/services-shadow.png") no-repeat 0 0;
+}
+
+.services-slider-switch {
+  padding: 14px 24px 17px 24px;
+  background-color: #32425c;
+  color: #ffffff;
   font-size: 21px;
   line-height: 30px;
+  font-weight: normal;
+  text-align: left;
+  border: none;
+  display: block;
+  width: 100%;
+}
+
+.services-slider-switch-active {
+  background-color: #ffffff;
+  color: #32425c;
+}
+
+.services-slider-slide h3 {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 36px;
+  line-height: 36px;
   color: #32425c;
   font-weight: normal;
   text-transform: uppercase;
+  margin: 0 0 22px 0;
+  padding: 0px;
+}
+
+.services-slider-slide p {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  margin: 0 0 30px 0;
+  padding: 0;
+}
+
+.services-slider-slide {
+  display: none;
+  position: relative;
+  padding-right: 250px;
 }
 
 .services-slider-slide-delivery {
-  background: url(../img/services-delivery.png) no-repeat 170px 20px;
+  display: block;
+}
+
+.services-slider-slide-delivery {
+  padding-right: 342px;
 }
 
 .services-slider-slide-guarantee {
-  background: url(../img/services-guarantee.png) no-repeat  245px 20px;
+  padding-right: 246px;
 }
 
 .services-slider-slide-credit {
-  background: url(../img/services-credit.png) no-repeat 173px 20px;
+  padding-right: 341px;
+}
+
+.services-slider-slide img {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.services-slider-slide-delivery img {
+  top: 23px;
+}
+
+.services-slider-slide-credit a {
+  width: 175px;
+  background-color: #ff5357;
+  text-align: center;
+  padding: 10px;
 }
 
 .about-company {
   background-color: #ffffff;
   color: #000000;
+  padding-top: 55px;
+  padding-bottom: 86px;
+}
+
+.about-company-description {
+  box-sizing: border-box;
+  width: 550px;
 }
 
 .about-company-description h2,
@@ -516,12 +614,62 @@ img {
   line-height: 30px;
   font-weight: normal;
   text-transform: uppercase;
+  width: 600px;
+}
+
+.about-company-description p {
+  margin: 25px 0 0 0;
+}
+
+.about-company-description-delivery {
+  width: 400px;
+}
+
+.about-company-description-delivery-partners {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .about-company-description-delivery-partners li {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
   line-height: 20px;
+  padding-top: 20px;
+  padding-left: 37px;
+  position: relative;
+}
+
+.about-company-description-delivery-partners li:first-child {
+  padding-top: 21px;
+}
+
+.about-company-description-delivery-partners li::before {
+  content: "";
+  width: 26px;
+  border-top: 2px solid #ee3643;
+  position: absolute;
+  top: 30px;
+  left: 0px;
+}
+
+.about-company-description-delivery-partners li:last-child::before {
+  top: 29px;
+}
+
+.about-company-contacts {
+  box-sizing: border-box;
+  width: 390px;
+  padding-left: 90px;
+}
+
+.about-company-contacts p{
+  width: 200px;
+  margin: 25px 0 0 0;
+}
+
+.about-company-contacts-map {
+  margin-top: 32px;
 }
 
 .about-company-description-delivery-more,
@@ -533,6 +681,21 @@ img {
   text-transform: uppercase;
   color: #ffffff;
   border-radius: 3px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: block;
+  box-sizing: border-box;
+}
+
+.about-company-description-delivery-more {
+  margin-top: 36px;
+  padding: 11px 39px 9px 41px;
+  width: 220px;
+}
+
+.about-company-contacts-contact-form {
+  margin-top: 31px;
+  padding: 11px 50px 9px 64px;
 }
 
 /* MAIN CONTENT ON CATALOG */
