@@ -18,6 +18,11 @@
           <form class="main-header-top-searchform" name="searchform" action="http://echo.htmlacademy.ru">
             <label for="header-search"><span class="visually-hidden">Поиск</span></label>
             <input type="text" id="header-search" class="search-input" placeholder="Поиск:">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17px" height="17px" viewBox="0 0 17 17">
+              <path d="M17,15.586l-3.542-3.542C14.421,10.782,15,9.21,15,7.5C15,3.358,11.643,0,7.5,0C3.358,0,0,3.358,0,7.5
+      C0,11.643,3.358,15,7.5,15c1.71,0,3.282-0.579,4.544-1.542L15.586,17L17,15.586z M2,7.5C2,4.467,4.467,2,7.5,2
+      C10.532,2,13,4.467,13,7.5c0,3.032-2.468,5.5-5.5,5.5C4.467,13,2,10.532,2,7.5z" />
+            </svg>
           </form>
           <div class="main-header-top-links">
             <a href="#" class="main-header-top-link main-header-top-link-bookmarks">Закладки: 0</a>
@@ -37,14 +42,20 @@
           </div>
         </div>
         <div class="main-header-bottom-user">
-          <ul class="main-header-bottom-user-menu">
+          <ul class="main-header-bottom-user-menu-login">
             <li>
               <a href="#" class="main-header-bottom-user-menu-username">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18">
+                  <path d="M17.88 14.166c-2.144-.735-4.256-1.666-5.207-2.4-.657-.5-.77-1.618-.517-2.415 1.118-.903 1.864-2.477 1.864-4.278C14.02 2.276 12.22 0 10 0S5.98 2.276 5.98 5.083c0 1.8.746 3.374 1.863 4.277.253.798.14 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.4S0 18 0 18h20s.025-3.1-2.12-3.834z"/>
+                </svg>
                 <span>Равшан Джамшутович</span>
               </a>
             </li>
             <li>
               <a href="#" class="main-header-bottom-user-menu-logout">
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="17">
+                  <path d="M21 8.5L12.125 0v6h-6v5h6v6zM3.106 13.952V3.048c.018-.376.17-1.057 1-1.057h5.027V0H4.116c-2.178 0-3.004 1.8-3.03 3.027v10.946C1.112 15.2 1.938 17 4.116 17h5.027v-2H4.116c-.84 0-.992-.683-1-1.058z"/>
+                </svg>
                 <span class="visually-hidden">Выйти</span>
               </a>
             </li>
@@ -78,9 +89,11 @@
     <main class="main-content">
       <h1 class="visually-hidden">Интернет-магазин Техномарт</h1>
       <ul class="main-breadcrumbs container">
-        <li><a href="index.html">
-          <span class="visually-hidden">Главная</span>
-        </a></li>
+        <li class="main-breadcrumbs-home">
+          <a href="index.html">
+            <span class="visually-hidden">Главная</span>
+          </a>
+        </li>
         <li><a href="#">Каталог</a></li>
         <li><a href="#">Инструмент</a></li>
         <li><a>Перфораторы</a></li>
@@ -93,50 +106,53 @@
             <fieldset name="filter-price">
               <legend class="filter-price-header">Цена:</legend>
               <div class="filter-price-range-controls">
-                <div class="scale">
-                  <div class="bar"></div>
-                </div>
-                <button type="button" class="toggle toggle-min">
+                <button type="button" class="filter-price-range-button">
                   <span class="visually-hidden">Минимальная цена</span>
                 </button>
-                <button type="button" class="toggle toggle-max">
+                <div class="filter-price-range-transparent-line"></div>
+                <div class="filter-price-range-above-line"></div>
+                <button type="button" class="filter-price-range-button">
                   <span class="visually-hidden">Максимальная цена</span>
                 </button>
               </div>
               <div class="filter-price-controls">
-                <label class="min-price"><input name="min-price" type="text" value="0"></label>
-                <span>—</span>
-                <label class="max-price"><input name="max-price" type="text" value="30000"></label>
+                <label class="min-price">
+                  <input name="min-price" type="text" value="0">
+                </label>
+                <span>&mdash;</span>
+                <label class="max-price">
+                  <input name="max-price" type="text" value="30000">
+                </label>
               </div>       
             </fieldset>
             <fieldset name="main-content-filter-form-manufacturers">
               <legend class="main-content-filter-form-manufacturers-description">Производители:</legend>
               <p class="main-content-filter-form-manufacturers-item">
-                <input type="checkbox" id="manufacturer-bosch" name="bosch" class="main-content-filter-form-checkbox" checked>
+                <input type="checkbox" id="manufacturer-bosch" name="bosch" class="main-content-filter-form-checkbox visually-hidden" checked>
                 <label for="manufacturer-bosch" class="main-content-filter-form-manufacturer">
                   Bosch
                 </label>
               </p>
               <p class="main-content-filter-form-manufacturers-item">
-                <input type="checkbox" id="manufacturer-interskol" name="interskol" class="main-content-filter-form-checkbox">
+                <input type="checkbox" id="manufacturer-interskol" name="interskol" class="main-content-filter-form-checkbox visually-hidden">
                 <label for="manufacturer-interskol" class="main-content-filter-form-manufacturer">
                   Интерскол
                 </label>
               </p>
               <p class="main-content-filter-form-manufacturers-item">
-                <input type="checkbox" id="manufacturer-makita" name="makita" class="main-content-filter-form-checkbox" checked>
+                <input type="checkbox" id="manufacturer-makita" name="makita" class="main-content-filter-form-checkbox visually-hidden" checked>
                 <label for="manufacturer-makita" class="main-content-filter-form-manufacturer">
                   Makita
                 </label>
               </p>
               <p class="main-content-filter-form-manufacturers-item">
-                <input type="checkbox" id="manufacturer-dewalt" name="dewalt" class="main-content-filter-form-checkbox">
+                <input type="checkbox" id="manufacturer-dewalt" name="dewalt" class="main-content-filter-form-checkbox visually-hidden">
                 <label for="manufacturer-dewalt" class="main-content-filter-form-manufacturer">
                   DeWalt
                 </label>
               </p>
               <p class="main-content-filter-form-manufacturers-item">
-                <input type="checkbox" id="manufacturer-hitachi" name="hitachi" class="main-content-filter-form-checkbox">
+                <input type="checkbox" id="manufacturer-hitachi" name="hitachi" class="main-content-filter-form-checkbox visually-hidden">
                 <label for="manufacturer-hitachi" class="main-content-filter-form-manufacturer">
                   Hitachi
                 </label>
@@ -145,13 +161,13 @@
             <fieldset name="main-content-filter-form-chargers">
               <legend class="main-content-filter-form-chargers-description">Питание:</legend>
               <p class="main-content-filter-form-chargers-item">
-                <input type="radio" id="main-content-filter-form-chargers-battery" name="charge-type" class="main-content-filter-form-radio" value="battery" checked>
+                <input type="radio" id="main-content-filter-form-chargers-battery" name="charge-type" class="main-content-filter-form-radio visually-hidden" value="battery" checked>
                 <label for="main-content-filter-form-chargers-battery" class="main-content-filter-form-charger">
                   Аккумуляторные
                 </label>
               </p>
               <p class="main-content-filter-form-chargers-item">
-                <input type="radio" id="main-content-filter-form-chargers-powersupply" name="charge-type" class="main-content-filter-form-radio" value="powersupply">
+                <input type="radio" id="main-content-filter-form-chargers-powersupply" name="charge-type" class="main-content-filter-form-radio visually-hidden" value="powersupply">
                 <label for="main-content-filter-form-chargers-powersupply" class="main-content-filter-form-charger">
                   Сетевые
                 </label>
@@ -169,8 +185,18 @@
               <a href="#" class="items-sort-link">По функционалу</a>
             </div>
             <div class="items-sort-links-arrows">
-              <a href="#" class="items-sort-link items-sort-link-active"><span class="visually-hidden">По возрастанию</span></a>
-              <a href="#" class="items-sort-link"><span class="visually-hidden">По убыванию</span></a>
+              <a href="#" class="items-sort-link items-sort-link-active">
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10">
+                  <path d="M5.5 0L0 10h11z"/>
+                </svg>
+                <span class="visually-hidden">По возрастанию</span>
+              </a>
+              <a href="#" class="items-sort-link items-sort-link-notactive">
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10">
+                  <path d="M5.5 10L0 0h11"/>
+                </svg>
+                <span class="visually-hidden">По убыванию</span>
+              </a>
             </div>
           </div>
           <div class="items">
@@ -295,7 +321,7 @@
         <div class="container">
           <h3>Пара слов о перфораторах</h3>
           <p>
-            Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне. Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
+            Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне. Существуют&nbsp;электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
           </p>
         </div>
       </div>
@@ -308,7 +334,7 @@
             <img src="img/logo-technomart.svg" alt="Техномарт" width="137" height="22">
           </a>
           <address class="main-footer-top-address">
-            <p>г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8</p>
+            <p>г. Санкт-Петербург, ул. Б. Конюшенная, д.&nbsp;19/8</p>
             <p><a href="tel:+78125550555" class="main-footer-top-phone">+7 (812) 555-05-55</a></p>
           </address>
         </div>
