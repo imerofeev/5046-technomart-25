@@ -370,12 +370,20 @@
     <section class="modal-contact modal">
       <h2 class="visually-hidden">Написать сообщение в магазин</h2>
       <form name="modal-contact-form" class="modal-contact-form" action="http://echo.htmlacademy.ru">
-        <label for="modal-contact-form-user">Ваше имя:</label>
-        <input type="text" id="modal-contact-form-user" placeholder="Имя Фамилия" name="modal-contact-form-user">
-        <label for="modal-contact-form-email">Ваш e-mail:</label>
-        <input type="email" id="modal-contact-form-email" placeholder="email@example.com" name="modal-contact-form-email">
-        <label for="modal-contact-form-message">Текст письма:</label>
-        <textarea id="modal-contact-form-message" rows="3" cols="10" placeholder="В свободной форме" name="modal-contact-form-message"></textarea>
+        <div class="modal-contact-form-container">
+          <div class="modal-contact-form-field">
+            <label for="modal-contact-form-user">Ваше имя:</label>
+            <input type="text" id="modal-contact-form-user" placeholder="Имя Фамилия" name="modal-contact-form-user">
+          </div>
+          <div class="modal-contact-form-field">
+            <label for="modal-contact-form-email">Ваш e-mail:</label>
+            <input type="email" id="modal-contact-form-email" placeholder="email@example.com" name="modal-contact-form-email">
+          </div>
+          <div class="modal-contact-form-field modal-contact-form-areafield">
+            <label for="modal-contact-form-message">Текст письма:</label>
+            <textarea id="modal-contact-form-message" rows="3" cols="10" placeholder="В свободной форме" name="modal-contact-form-message"></textarea>
+          </div>
+        </div>
         <button type="submit" name="modal-contact-form-submit">Отправить</button>
       </form>
       <button type="button" class="modal-contact-close modal-close">
@@ -400,5 +408,6 @@
         <span class="visually-hidden">Закрыть окно</span>
       </button>
     </section>
+    <script src="js/script.js"></script>
   </body>
 </html>
