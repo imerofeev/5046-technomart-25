@@ -133,7 +133,7 @@ input::-ms-clear{display:none}
 .services-slider-switch-active:hover,.services-slider-switch-active:focus,.services-slider-switch:hover:active{background-color:#fff;color:#32425c}
 .services-slider-slide h3{font-family:"Cuprum",Arial,sans-serif;font-size:36px;line-height:36px;color:#32425c;text-transform:uppercase;margin:0 0 22px;padding:0;font-weight:400}
 .services-slider-slide p{font-family:"PT Sans",Arial,sans-serif;font-size:13px;line-height:24px;margin:0 0 27px;padding:0;width:270px}
-.services-slider-slide{display:none;position:relative;height:285px;width:650px}
+.services-slider-slide{display:none;position:relative;padding-bottom:100px;width:650px}
 .services-slider-slide-active{display:block}
 .services-slider-slide-delivery{background:url(../img/services-delivery.png) no-repeat 150px 22px}
 .services-slider-slide-guarantee{background:url(../img/services-guarantee.png) no-repeat 240px 0}
